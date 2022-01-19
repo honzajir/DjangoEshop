@@ -350,6 +350,21 @@ class ProductsView(ListView):
     paginate_by = 10
     template_name = "products.html"
 
+class AboutView(ListView):
+    model = Item
+    paginate_by = 10
+    template_name = "about.html"
+
+class SalesView(ListView):
+    model = Item
+    paginate_by = 10
+    template_name = "sales.html"
+
+class ContactsView(ListView):
+    model = Item
+    paginate_by = 10
+    template_name = "contacts.html"
+
 class HomeView(ListView):
     model = Item
     paginate_by = 10
